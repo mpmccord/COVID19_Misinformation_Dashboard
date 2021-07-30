@@ -5,21 +5,21 @@ A dashboard to detect and explain COVID-19 misinformation.
 Project Structure
 - app.py: Runs the webpage
 static: default given by Flask
-Directories
+Directories \n
 
-- getting_data
-files:
-get_data_from_url.py
+getting_data
+- files:
+  - get_data_from_url.py
 
-- GetDataFromURL:
-Given a url, preprocesses the data and returns it as a url.
-  - Methods:
-    - getHTMLText(self, url):
-      Gets the data from a url and returns it as a string.
-    - cleanURLData:
-      returns the title and text from the url.
-    - getDataFromURL:
-      main function that preprocesses the url given these functions and returns the title and url.
+  - GetDataFromURL:
+  Given a url, preprocesses the data and returns it as a url.
+    - Methods:
+      - getHTMLText(self, url):
+        Gets the data from a url and returns it as a string.
+      - cleanURLData:
+        returns the title and text from the url.
+      - getDataFromURL:
+        main function that preprocesses the url given these functions and returns the title and url.
 
 - model
   - directories:
