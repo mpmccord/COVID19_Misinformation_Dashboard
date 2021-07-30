@@ -1,6 +1,6 @@
 # COVID19_Misinformation_Dashboard
-This is a dashboard to track COVID-19 Misinformation and output a result given a url
-Final product of the Machine Learning and Security REU for Summer 2021
+Final product of the Machine Learning and Security REU for Summer 2021 \n
+A dashboard to detect and explain COVID-19 misinformation.
 Project Structure
 app.py: Runs the webpage
 static: default given by Flask
