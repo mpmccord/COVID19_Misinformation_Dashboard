@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -10,6 +10,8 @@ def home():
 
 @app.route('/classify')
 def classify():
+    try:
+        url = request.args.get('Link to news')
     return render_template('home.html')
 
 
