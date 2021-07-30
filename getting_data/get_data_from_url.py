@@ -11,6 +11,8 @@ class GetDataFromUrl:
     def getHTMLText(self, url):
         raw_html = requests.get(url)
         print('Status code', raw_html.status_code)
+        if raw_html.status_code is not 200:
+            raise ValueError('This news is not found.')
         coverpage = raw_html.content
         return coverpage
 
